@@ -2127,6 +2127,9 @@ display: none;
         top: -7px;
         left: -18px;
     }
+    .hiringtab1 ,.hiringtab2 , .hiringtab3 , .hiringtab4{
+        display: none;
+    }
     /* ------------------scaleSection-------------------------- */
     .scaleHeading {
         font-size: 22px;
@@ -2180,7 +2183,13 @@ display: none;
         top: 48px;
         left: 6px;
     }
-
+    .facilitatorPara::before {
+       display: none;
+    }
+    
+    .facilitatorPara::after {
+       display: none;
+    }
 
 
     /* -----------------------------------scaleSection-------------------------------- */
