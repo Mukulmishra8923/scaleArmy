@@ -131,7 +131,7 @@ text-align: left;
 }
 .herotag1{
 position: absolute;
-list-style: url(/assets/imgaes/listIcon.svg);
+list-style: url(assets/imgaes/listIcon.svg);
 background-color: #7FD8BE;
 padding: 20px 30px 20px 50px;
 border-radius: 90px;
@@ -142,7 +142,7 @@ left: -110px;
 }
 .herotag2{
     position: absolute;
-    list-style: url(/assets/imgaes/listIcon.svg);
+    list-style: url(assets/imgaes/listIcon.svg);
     background-color: #7FD8BE;
     padding: 20px 30px 20px 50px;
 border-radius: 90px;
@@ -152,7 +152,7 @@ top: 30%;
 }
 .herotag3{
   position: absolute;  
-  list-style: url(/assets/imgaes/listIcon.svg);
+  list-style: url(assets/imgaes/listIcon.svg);
   background-color: #7FD8BE;
   padding: 20px 30px 20px 50px;
 border-radius: 90px;
@@ -285,7 +285,7 @@ letter-spacing: 0.4000000059604645px;
 }
 .discoverImg::after{
     position: absolute;
-    content: url(/assets/imgaes/HighlightsRight.svg);
+    content: url(assets/imgaes/HighlightsRight.svg);
     top: -33px;
     right: -25px;
 }
@@ -393,7 +393,7 @@ position: relative;
 
 .assistantHeading h2::before{
     position: absolute;
-    content: url(/assets/imgaes/Highlight-Assistant.svg);
+    content: url(assets/imgaes/Highlight-Assistant.svg);
     top: -25px;
     left: 472px;
 }
@@ -455,7 +455,7 @@ margin-left: -22px;
 }
 .assistantCard ul li{
     margin-top: 16px;
-    list-style: url(/assets/imgaes/assistantListIcon.svg);
+    list-style: url(assets/imgaes/assistantListIcon.svg);
 }
  .assistantBtn {
 border: 1px solid  #3772FF;
@@ -525,7 +525,7 @@ position: relative;
 }
 .internationalHeading h2::before{
     position: absolute;
-    content: url(/assets/imgaes/Highlight-Assistant.svg);
+    content: url(assets/imgaes/Highlight-Assistant.svg);
     top: -45px;
     left: -21px;
 }
@@ -656,7 +656,7 @@ input:active {
 }
 .marketHeading h2::before{
     position: absolute;
-    content: url(/assets/imgaes/Highlight-Assistant.svg);
+    content: url(assets/imgaes/Highlight-Assistant.svg);
     top: -30px;
     left: -20px;
 
@@ -883,7 +883,7 @@ position: relative;
 
 .journeyHeading h2::before{
     position: absolute;
-    content: url(/assets/imgaes/Highlight-Assistant.svg);
+    content: url(assets/imgaes/Highlight-Assistant.svg);
     top: -30px;
     left: -20px;
 }
@@ -904,13 +904,13 @@ letter-spacing: 0.15000000596046448px;
 }
 .journeyImg::before{
     position: absolute;
-    content: url(/assets/imgaes/journeyImgLeft.svg);
+    content: url(../assets/imgaes/journeyImgLeft.svg);
     bottom: -25px;
     left: -25px;
 }
 .journeyImg::after{
     position: absolute;
-    content: url(/assets/imgaes/journeyImgRight.svg);
+    content: url(../assets/imgaes/journeyImgRight.svg);
     top: -25px;
     right: -25px;
 }
@@ -1008,7 +1008,7 @@ position: relative;
 
 .hiringRight h2::before{
     position: absolute;
-    content: url(/assets/imgaes/Highlight-Assistant.svg);
+    content: url(assets/imgaes/Highlight-Assistant.svg);
     top: -30px;
     left: -20px;
 }
@@ -1084,13 +1084,13 @@ color: #000000;
 
 .facilitatorPara::before{
  position: absolute;
- content: url(/assets/imgaes//leftQuote.svg);
+ content: url(assets/imgaes//leftQuote.svg);
  top: -45px;
     left: -70px;
 }
 .facilitatorPara::after{
     position: absolute;
-    content: url(/assets/imgaes/rightQuote.svg);
+    content: url(assets/imgaes/rightQuote.svg);
     bottom: 0px;
     right: -64px;
    }
@@ -1174,11 +1174,13 @@ color: #000000;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -2;
 }
 .seekbg2{
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -2;
 
 }
 
@@ -1223,17 +1225,9 @@ text-align: center;
     margin-left: auto;
     content:'';
     border-radius: 50px;
-    /* background: red; */
-    /* background-image: url(/assets/imgaes/accordionIcon.svg); */
+    
 
 }
-
-
-
-/* .accordionParent .accordion-button:not(.collapsed)::after{
-    background-image: url(/assets/imgaes/accordingIcon2.svg);
-    background: red;
-} */
 
 
 .accordion-body {
@@ -1247,9 +1241,10 @@ text-align: center;
 padding: 60px 80px ;
 gap: 40px;
 border-radius: 40px ;
-background-image: url(/assets/imgaes/seekRight.svg);
+background-image: url(assets/imgaes/seekRight.svg);
 position: absolute;
 bottom: -130px;
+overflow: hidden;
 }
 
 .seekHeading h2{
@@ -1373,6 +1368,11 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
         max-width: 95% !important;
     
     } */
+    .heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 100.2px;
+    }
     .herotag2 {
         background-color: #7FD8BE;
         padding: 10px 10px 10px 50px;
@@ -1383,11 +1383,10 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
     }
     .herotag3 {
         padding: 10px 10px 10px 50px;
-  
-        bottom: 11%;
+        bottom: 0%;
         right: 6px;
-    
-    }.herotag1 {
+    }
+    .herotag1 {
         padding: 10px 10px 10px 50px;
         border-radius: 90px;
         top: 50%;
@@ -1434,6 +1433,11 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
         background-color: white;
         right: -66px;
         bottom: -15px;
+    }
+    .superContent .superImg4 {
+        position: absolute;
+        top: 157px;
+        right: 97px;
     }
 
 
@@ -1620,9 +1624,7 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
         left: -30px;
 
     }
-    .herotag2 {
-       
-    }
+   
     .herotag3{
         bottom: -4%;
         right: -2px;
@@ -1889,6 +1891,7 @@ display: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+       
     }
     .facilitatorSection {
         padding: 50px 0px;
@@ -2182,7 +2185,7 @@ display: none;
     
     }
     .marketinput input{
-        max-width: 142px;
+        max-width: 170px;
     }
     
     .marketHeading h2::before {
@@ -2279,26 +2282,22 @@ display: none;
         list-style: none;
         margin-bottom: 10px;
     }
-    .footerData {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between;
-    }
+
     .footerData {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+    }
+    .bottomLogo{
+        padding-left: 30px;
     }
     .copyright{
         text-align: center;
     }
-    .quick{
-      
-    }
+   
     .item{
         display: flex;
         justify-content: center;
@@ -2316,8 +2315,7 @@ display: none;
     }
 
     .superinput input {
-        max-width: 83px;
-       
+        max-width: 151px;
     }
     .internationalHeading h2::before {
         top: -5px;
@@ -2330,5 +2328,16 @@ display: none;
     .marketHeading h2::before {
         top: 48px;
         left: -13px;
+    }
+    .scales3{
+        height: 240px;
+    object-fit: fill;
+    }
+    .getStarted-btn {
+        padding: 13px 14px;
+        gap: 0px;
+    }
+    .getStarted-btn a {
+        font-size: 0px;
     }
 }
