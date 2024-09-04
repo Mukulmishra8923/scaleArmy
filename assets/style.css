@@ -1300,13 +1300,15 @@ text-align: center;
 .footerData .socialIcon li:hover svg {
     transform: scale(1.2); /* Scale the SVG on hover */
 }
-.quickLinks ul li{
+.quickLinks ul li, .contact ul li{
     list-style: none;
     margin-bottom: 20px;  
     position: relative;
     transition: box-shadow 0.3s ease-in-out;
 }
-
+.contact ul li  a{
+    color: white;
+}
 
 
 .quickLinks a{
@@ -1335,9 +1337,13 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
     position: relative;
     transition: color 0.3s ease;
 }
+.contact ul  a{
+    text-decoration: none;
+}
 
-.morestuff ul li:hover a , .quickLinks ul li:hover a{
+.morestuff ul li:hover a , .quickLinks ul li:hover a, .contact ul li:hover a{
 border-bottom: 1px solid #3772FF;
+color: blue;
 }
 .morestuff a{
     text-decoration: none;
