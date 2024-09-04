@@ -42,8 +42,8 @@ $('.assistantCarousel').owlCarousel({
     autoplayHoverPause: true,
     dots: false,
     navText: [
-        '<img src="/assets/imgaes/carouselArrow.svg" alt="Previous">',
-        '<img src="/assets/imgaes/carousel-arrow.svg" alt="Next">'
+        '<img src="assets/imgaes/carouselArrow.svg" alt="Previous">',
+        '<img src="assets/imgaes/carousel-arrow.svg" alt="Next">'
     ],
     responsive: {
         0: {
@@ -90,8 +90,8 @@ $('.facilitatorCarousel').owlCarousel({
     margin:10,
     nav:true,
     navText: [
-        '<img src="/assets/imgaes/carouselArrow.svg" alt="Previous">',
-        '<img src="/assets/imgaes/carousel-arrow.svg" alt="Next">'
+        '<img src="assets/imgaes/carouselArrow.svg" alt="Previous">',
+        '<img src="assets/imgaes/carousel-arrow.svg" alt="Next">'
     ],
     responsive:{
         0:{
