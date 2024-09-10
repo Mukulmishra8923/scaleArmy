@@ -60,6 +60,11 @@ transition: background-color 0.3s ease-in-out;
 .imgSize{
     max-width: 100%;
 }
+.getStarted-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
 .getStarted-btn{
 padding: 13px 27px;
 background: #3772FF;
@@ -68,24 +73,30 @@ border-radius: 999px;
 display: flex;
 align-items: center;
 gap: 12px;
+border:none;
 }
 .getStarted-btn:hover{
     background-color: #007BCC;
 }
 
-.getStarted-btn a span svg {
+
+/* ----------------------------------------------getStarted button------------------------ */
+.getStarted-btn button span svg {
     transition: fill 0.3s ease; /* Smooth transition for fill color */
 }
-
-.getStarted-btn a:hover span svg {
+.getStarted-btn button:hover span svg {
     fill: #007BFF !important; /* Change to your desired color on hover */
 }
-
-.getStarted-btn a{
+.getStarted-btn button{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
+
+
+
+
+/* -------------------------------------------end----------------------------- */
 
 .heading{
     font-size: 90px;
@@ -1245,11 +1256,25 @@ text-align: center;
     box-shadow: unset;
 }
 
-.accordion-button:not(.collapsed)::after {
-    transform: rotate(90deg);
-    background-color: rgb(127, 127, 235); 
-    background-image: url(/assets/imgaes/accordionArrow.svg);
+
+.accordion-button::after {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    box-shadow: 0px 6.44px 20.61px 0px #080F340F;
+    content: '';
+    border-radius: 50px;
+    background-position: center;
+    transform: rotate(-90deg);
+    background-image: url(/assets/imgaes/accordionCloseArrow.svg);
 }
+
+/* When the accordion is opened (active state) */
+.accordion-button:not(.collapsed)::after {
+    background-color: #3772FF; 
+    background-image: url(/assets/imgaes/accordioanOpenArrow.svg); /* Optionally use a different image for open state */
+}
+
 
 .accordion-body {
     color: #969698;
@@ -1381,6 +1406,28 @@ transition: color 0.3s ease; /* Smooth transition over 0.3 seconds */
     color: #969698;
     list-style: none;
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 1800px) {
+    .herotag3 {
+        right: -50px;
+        /* display: none; */
+    }
+    .herotag2 {
+        right: -41px;
+        top: 20%;
+    }
+}
+@media (max-width: 1660px) {
+    .herotag3 {
+        right: -10px;
+        /* display: none; */
+    }
+    .herotag2 {
+        right: 0px;
+        top: 20%;
+    } 
 }
 
 
