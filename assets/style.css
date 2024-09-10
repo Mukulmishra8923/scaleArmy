@@ -1162,6 +1162,11 @@ color: #000000;
 .facilitatorCarousel.owl-drag .owl-item {
     padding: 30px;
 }
+ .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #3772FF;
+}
+
+
 .frequentlySection{
     position: relative;
     padding-bottom: 258px;
@@ -1220,15 +1225,31 @@ text-align: center;
 }
 
 .accordion-button::after {
-     width: 20px;
-    height: 20px;
+     width: 50px;
+    height: 50px;
     margin-left: auto;
+    /* background-color: blue; */
+    box-shadow: 0px 6.44px 20.61px 0px #080F340F;
+
     content:'';
     border-radius: 50px;
-    
+    background-position: center;
+    background-image: url(/assets/imgaes/accordionArrow.svg);
 
 }
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: unset;
+}
+.accordion-button:focus {
+    box-shadow: unset;
+}
 
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+    background-color: rgb(127, 127, 235); 
+    background-image: url(/assets/imgaes/accordionArrow.svg);
+}
 
 .accordion-body {
     color: #969698;
@@ -1911,7 +1932,7 @@ display: none;
 
 }
 
-@media (max-width: 981px) {
+@media (max-width: 991px) {
     .container {
         max-width: 95% !important;
     
@@ -2307,6 +2328,11 @@ display: none;
 
 }
 
+@media (max-width: 430px) {
+    .getStarted-btn a {
+        font-size: 0px;
+    }
+}
 
 @media (max-width: 400px) {
     .container {
